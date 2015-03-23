@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @gal.name %>
+</p>
+
+<p>
+  <strong>Worst bad date:</strong>
+  <%= @gal.worst_bad_date %>
+</p>
+
+<%= link_to 'Edit', edit_gal_path(@gal) %> |
+<%= link_to 'Back', gals_path %>

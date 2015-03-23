@@ -1,0 +1,78 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  guy_id: 2
+  gal_id: 1
+  first_date: 1998-03-01
+  next_date: true
+
+two:
+  id: 2
+  guy_id: 3
+  gal_id: 1
+  first_date: 2005-06-01
+  next_date: false
+
+three:
+  id: 3
+  guy_id: 1
+  gal_id: 1
+  first_date: 2009-06-01
+  next_date: true
+
+four:
+  id: 4
+  guy_id: 2
+  gal_id: 2
+  first_date: 2005-01-05
+  next_date: false
+
+five:
+  id: 5
+  guy_id: 5
+  gal_id: 3
+  first_date: 2001-03-22
+  next_date: true
+
+six:
+  id: 6
+  guy_id: 2
+  gal_id: 4
+  first_date: 1998-02-01
+  next_date: true
+
+seven:
+  id: 7
+  guy_id: 4
+  gal_id: 3
+  first_date: 1997-11-05
+  next_date: true
+
+eight:
+  id: 8
+  guy_id: 6
+  gal_id: 4
+  first_date: 1987-08-17
+  next_date: false
+
+nine:
+  id: 9
+  guy_id: 1
+  gal_id: 5
+  first_date: 2008-09-16
+  next_date: false
+
+ten:
+  id: 10
+  guy_id: 4
+  gal_id: 6
+  first_date: 2004-09-28
+  next_date: true
+
+eleven:
+  id: 11
+  guy_id: 2
+  gal_id: 3
+  first_date: 1994-12-01
+  next_date: false

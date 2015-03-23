@@ -1,0 +1,25 @@
+<%= form_for(@gal) do |f| %>
+  <% if @gal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gal.errors.count, "error") %> prohibited this gal from being saved:</h2>
+
+      <ul>
+      <% @gal.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :worst_bad_date %><br>
+    <%= f.text_field :worst_bad_date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

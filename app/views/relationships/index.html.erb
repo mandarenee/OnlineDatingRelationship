@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Online Dating Relationships</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Guy</th>
+      <th>Gal</th>
+      <th>First date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @relationships.each do |relationship| %>
+      <tr>
+        <td><%= relationship.guy.name %></td>
+        <td><%= relationship.gal.name %></td>
+        <td><%= relationship.first_date %></td>
+        <td><%= link_to 'Did they go on a second date? Click here to find out!', relationship %></td>
+        <td><%= link_to 'Edit', edit_relationship_path(relationship) %></td>
+        <td><%= link_to 'Destroy', relationship, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Relationship', new_relationship_path %><br/>
+<p>See all <%= link_to 'Guys', guys_path %> or <%= link_to 'Gals', gals_path %></p>

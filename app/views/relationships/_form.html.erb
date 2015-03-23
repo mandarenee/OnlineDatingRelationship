@@ -1,0 +1,33 @@
+<%= form_for(@relationship) do |f| %>
+  <% if @relationship.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@relationship.errors.count, "error") %> prohibited this relationship from being saved:</h2>
+
+      <ul>
+      <% @relationship.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :guy %><br>
+    <%= f.select(:guy_id, Guy.all.map{|guy| [guy.name, guy.id]}) %>
+  </div>
+  <div class="field">
+    <%= f.label :gal_id %><br>
+    <%= f.select(:gal_id, Gal.all.map{|gal| [gal.name, gal.id]}) %>
+  </div>
+  <div class="field">
+    <%= f.label :first_date %><br>
+    <%= f.date_select :first_date %>
+  </div>
+  <div class="field">
+    <%= f.label :next_date, "Was there a second date?" %><br>
+    <%= f.check_box :next_date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
