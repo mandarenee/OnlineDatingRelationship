@@ -1,0 +1,2 @@
+module GalsHelper
+end

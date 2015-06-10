@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Guy:</strong>
+  <%= @guy.name %>
+</p>
+
+<p>
+  <strong>Gal:</strong>
+  <%= @gal.name %>
+</p>
+
+<p>
+  <strong>First date:</strong>
+  <%= @relationship.first_date %>
+</p>
+
+<p>
+  <strong>Did they go on a second date?:</strong>
+  <% if @relationship.next_date == true %>
+    <em>Yes! They did!</em>
+  <% else %>
+    <em>No. They didn't, the first date was terrible.</em>
+  <% end %>
+</p>
+
+<%= link_to 'Edit', edit_relationship_path(@relationship) %> |
+<%= link_to 'Back', relationships_path %>

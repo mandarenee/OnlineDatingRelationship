@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+gerard:
+  id: 1
+  name: Gerard Butler
+  number_of_emails_sent: 59
+
+brad:
+  id: 2
+  name: Brad Pitt
+  number_of_emails_sent: 3
+
+vince:
+  id: 3
+  name: Vince Vaughn
+  number_of_emails_sent: 300
+
+ben:
+  id: 4
+  name: Ben Affleck
+  number_of_emails_sent: 239
+
+luke:
+  id: 5
+  name: Luke Wilson
+  number_of_emails_sent: 120
+
+bruce:
+  id: 6
+  name: Bruce Willis
+  number_of_emails_sent: 399

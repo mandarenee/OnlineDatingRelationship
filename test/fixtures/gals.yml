@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+jennifera:
+  id: 1
+  name: Jennifer Aniston
+  worst_bad_date: The guy just kept watching the game at the restaurant instead of talking to me!
+
+angelina:
+  id: 2
+  name: Angelina Jolie
+  worst_bad_date: I told him I wanted to adopt children. He rolled his eyes at me.
+
+gwyneth:
+  id: 3
+  name: Gwyneth Paltrow
+  worst_bad_date: It's hard dating actors. We sat next to a window and he looked at his reflection every 30 seconds.
+
+demi:
+  id: 4
+  name: Demi Moore
+  worst_bad_date: He forgot my name three times!
+
+cameron:
+  id: 5
+  name: Cameron Diaz
+  worst_bad_date: This guy checked his phone through the entire date. The date was only an hour.
+
+jenniferg:
+  id: 6
+  name: Jennifer Garner
+  worst_bad_date: He ordered for me at the restaurant without asking me what I wanted.
